@@ -1,0 +1,13 @@
+[
+  {
+    "id": "mad4g26fvw2i7jacc5",
+    "title": "Notebook Dell",
+    "description": "Notebook Core i5, 8GB RAM",
+    "code": "NOTE123",
+    "price": 3500,
+    "status": true,
+    "stock": 10,
+    "category": "eletrônicos",
+    "thumbnails": []
+  }
+]

@@ -1,0 +1,42 @@
+
+<div class="container">
+  <h1 class="my-4">Produtos Disponíveis</h1>
+  
+  
+  <div class="row">
+    {{#each products}}
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        {{#if this.thumbnails.[0]}}
+        <img src="{{this.thumbnails.[0]}}" class="card-img-top" alt="{{this.title}}">
+        {{else}}
+        <div class="bg-secondary text-white p-5 text-center">Sem imagem</div>
+        {{/if}}
+        
+        <div class="card-body">
+          <h5 class="card-title">{{this.title}}</h5>
+          <p class="card-text">{{this.description}}</p>
+          <ul class="list-unstyled">
+            <li><strong>Preço:</strong> R$ {{this.price}}</li>
+            <li><strong>Estoque:</strong> {{this.stock}} unidades</li>
+            <li><strong>Código:</strong> {{this.code}}</li>
+          </ul>
+        </div>
+        
+        <div class="card-footer bg-white">
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <div class="col-12">
+      <div class="alert alert-warning">Nenhum produto disponível no momento</div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+
+<div id="realTimeUpdates" class="mt-5 p-3 bg-light rounded">
+  <h3>Atualizações em Tempo Real</h3>
+  <p class="text-muted">(Área para integração com Socket.io)</p>
+</div>

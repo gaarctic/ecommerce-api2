@@ -1,0 +1,16 @@
+{
+    "name": "ecommerce-backend",
+    "version": "1.0.0",
+    "description": "API para gerenciamento de produtos e carrinhos",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js",
+        "dev": "nodemon src/server.js"
+    },
+    "dependencies": {
+        "express": "^4.21.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    }
+}

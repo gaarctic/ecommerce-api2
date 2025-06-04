@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "994b1b4a-2001-41e6-a00e-cfff1be01b89",
+		"name": "API de E-commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44733188",
+		"_collection_link": "https://gabriella-5455943.postman.co/workspace/Gabriella's-Workspace~2399f2a4-70c0-46f0-8aa8-e56d1b4a2886/collection/44733188-994b1b4a-2001-41e6-a00e-cfff1be01b89?action=share&source=collection_link&creator=44733188"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/carts/mad4p54k6ck88wdozrq",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/carts/mad4p54k6ck88wdozrq",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carts",
+						"mad4p54k6ck88wdozrq"
+					]
+				},
+				"description": "The API endpoint retrieves the details of a specific cart identified by the provided ID.\n\nThe response of the request can be documented as a JSON schema:\n\n``` json\n{\n    \"type\": \"object\",\n    \"properties\": {\n        \"id\": {\n            \"type\": \"string\"\n        },\n        \"products\": {\n            \"type\": \"array\",\n            \"items\": {\n                \"type\": \"object\",\n                \"properties\": {\n                    \"product\": {\n                        \"type\": \"string\"\n                    },\n                    \"quantity\": {\n                        \"type\": \"integer\"\n                    }\n                },\n                \"required\": [\"product\", \"quantity\"]\n            }\n        }\n    },\n    \"required\": [\"id\", \"products\"]\n}\n\n ```"
+			},
+			"response": []
+		}
+	]
+}
